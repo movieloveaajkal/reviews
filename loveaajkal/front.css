@@ -1,0 +1,136 @@
+*{
+	margin:0;
+	padding:0;
+}
+header{width:100%;
+	height:100vh;
+	
+background-image:url('tb.jpg');
+}
+nav{
+	width:100%;
+	height:15vh;
+	background:rgba(255,255,255,0.2);
+	color:#ffffff;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	font-variant:small-caps;
+	font-weight:bolder;
+
+}
+nav .logo{
+	width:25%;
+	text-align:center;
+}
+nav .menu ul{
+	
+	display:inline-flex;
+	justify-content:space-around;
+	list-style: none
+	}
+nav .menu  ul li{width:120px;
+	padding:10px;
+	margin-left:15px;
+	text-align:center;
+}
+nav .menu a{
+	text-decoration:none;
+	color:#ffffff;
+	font-weight:bold;
+}
+main{
+	width:100%;
+    height:65vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    color:white;
+    font-weight:bolder;
+    font-family: 'Abril Fatface', cursive;
+}
+section{
+
+}
+section h3{
+	font-size: 150%;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	text-shadow:1px 1px 2px #d6d6d6;
+}
+section h1{margin: 30px 0 20px 0;
+	       font-size:250%;
+	       font-weight: bolder;
+	       text-shadow: 2px 1px 2px #50b98d;
+	       font-variant: small-caps;
+
+}
+section p{
+	font-size:120%;
+	font-weight: bold;
+	word-spacing: 2px;
+
+margin: 3px;
+margin-bottom: 25px;
+
+}
+section a{margin:25px;
+       padding:12px;
+       text-decoration:none;
+       border-radius: 10px;
+       font-size: 130%;
+       font-weight: bold;
+       text-align: center;
+       color:white;
+       background: rgba(255,255,255,0.2);
+}
+span:after{content: '';
+           animation:changetext 10s infinite linear;
+           color:#50b98d;
+}
+@keyframes changetext{
+0%{content:"Love Aaj Kall";}
+20%{content:"xyz";}
+40%{content:"abc";}
+60%{content:"bsgnhdf";}
+80%{content:"hdrvdsrt";}
+100%{content:"mfrdteet";}
+}
+.active , .menu a:hover {
+	background:#50b98d;
+	width: 13%;
+	text-align:center;
+	border-radius: 5px;
+}
+.submenu1{
+
+	display: none;
+}
+nav .menu  ul li:hover .submenu1{
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,0.2);
+	margin-top: 15px;
+	margin-left: -15px;
+}
+nav .menu  ul li:hover .submenu1 ul{
+	display: block;
+	margin: 10px;
+}
+nav .menu  ul li:hover .submenu1 ul li{
+	width:150px;
+	padding:10px;
+	border-bottom: 1px dotted #ffffff;
+
+
+	border-radius: 0;
+	text-align: left;
+	color: #50b98d;
+	font-weight: bolder;
+	font-size: 150%;
+	font-style: italic;
+}
+nav .menu  ul li:hover .submenu1 ul li:last-child{
+	border-bottom:none;
+}

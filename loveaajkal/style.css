@@ -1,0 +1,31 @@
+body{
+background: url(background.jpg) no-repeat;
+height:100vh;
+
+background-size:cover;
+font-family:sans-serif;
+}
+.container{
+width:50%;
+margin:0 auto;
+padding:5px;
+background-color:#ffffff;
+border-radius:10px;
+text-align:center;
+margin-top:7%;
+}
+hr{ width:80%;
+}
+.fb
+{
+ background-color:#87ceecd1;
+ color:#000000;
+ border-radius:5px;
+}
+a{text-decoration:none;
+}
+.container input{width:70%;
+                 padding:2px;
+                }
+.container input[type=checkbox]{width:auto;
+}
